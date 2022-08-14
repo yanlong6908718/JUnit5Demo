@@ -22,7 +22,9 @@ public class additionTest extends baseTest {
     @Tag("add")
     @DisplayName("Integer addition")
     void integerAdd(int a,int b) {
-        System.out.println(ca.add(a,b));
+        String expected = "Hii";
+        System.out.println(666);
+        assertEquals(expected,ca.add(a,b),"incorrect!!");
     }
 
     @Test
@@ -30,10 +32,10 @@ public class additionTest extends baseTest {
         String expected = "Hii";
         String nullValue = null;
         assertAll(
-//                () -> assertEquals(expected, "", "incorrect!!"),
+                () -> assertEquals(expected, "", "incorrect!!"),
                 () -> assertFalse(nullValue != null),
                 () -> assertNull(nullValue),
-//                () -> assertNull("not null", "incorrect!"),
+                () -> assertNull("not null", "incorrect!"),
                 () -> assertTrue(nullValue == null));
     }
 }
