@@ -1,0 +1,63 @@
+{
+  "uid" : "720fefb7e1d79421",
+  "name" : "[1] 0.2, 0.01",
+  "fullName" : "com.yl.junit5.testdemo.subtraction.subtractionTest.decimalsNumber",
+  "historyId" : "b1f375e26c646ee12098e29f6bb6bf3a",
+  "time" : {
+    "start" : 1660390629724,
+    "stop" : 1660390629771,
+    "duration" : 47
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "decimals"
+  }, {
+    "name" : "tag",
+    "value" : "subtractionTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-G1AHB4E"
+  }, {
+    "name" : "thread",
+    "value" : "35824@DESKTOP-G1AHB4E.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.yl.junit5.testdemo.subtraction.subtractionTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.yl.junit5.testdemo.subtraction.subtractionTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "decimalsNumber"
+  }, {
+    "name" : "suite",
+    "value" : "subtractionTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "decimals", "subtractionTest" ]
+  },
+  "source" : "720fefb7e1d79421.json",
+  "parameterValues" : [ ]
+}

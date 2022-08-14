@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.10.0'
+}
+apply plugin:"io.qameta.allure"
+
+allure {
+    autoconfigure = true
+}
+
+group 'com.yanlong'
+version '1.0-SNAPSHOT'
+
+repositories {
+
+    maven {url "http://maven.aliyun.com/nexus/content/groups/public"}
+    mavenCentral()
+}
+
+ext.JunitGradlePluginVersion='1.2.0'
+ext.JunitPlatfromVersion='1.9.0'
+ext.JunitJupiterVersion='5.9.0'
+ext.JunitVintageVersion='5.9.0'
+ext.log4jVersion='2.9.0'
+
+dependencies {
+    compile "org.junit.platform:junit-platform-launcher:${JunitPlatfromVersion}"
+    compile "org.junit.platform:junit-platform-gradle-plugin:${JunitGradlePluginVersion}"
+    compile ("org.junit.jupiter:junit-jupiter-engine:${JunitJupiterVersion}")
+//    compile ("org.junit.jupiter:junit-vintage-engine:${JunitVintageVersion}")
+    compile ("org.junit.jupiter:junit-jupiter-params:${JunitJupiterVersion}")
+    compile ("org.junit.platform:junit-platform-runner:${JunitPlatfromVersion}")
+    compile ("org.junit.platform:junit-platform-suite-api:${JunitPlatfromVersion}")
+    testRuntime("org.apache.logging.log4j:log4j-core:${log4jVersion}")
+    testRuntime("org.apache.logging.log4j:log4j-jul:${log4jVersion}")
+    testRuntime 'io.qameta.allure:allure-junit5:2.10.0'
+
+
+}
+test{
+        filter{
+//            includeTestsMatching "*subtraction*"
+            setIncludePatterns "com.yl.junit5.testdemo.*"
+//            includeTest "com.yl.junit5.testdemo.subtraction.subtractionTest","decimalsNumber"
+        }
+    useJUnitPlatform()
+}
