@@ -30,7 +30,7 @@ public class additionTest extends baseTest {
         String expected = "Hii";
         String nullValue = null;
         assertAll(
-                () -> assertEquals(expected, "", "incorrect!"),
+                () -> assertEquals(expected, "", "incorrect!!"),
                 () -> assertFalse(nullValue != null),
                 () -> assertNull(nullValue),
                 () -> assertNull("not null", "incorrect!"),
