@@ -39,8 +39,8 @@ dependencies {
 }
 test{
         filter{
-//            includeTestsMatching "*subtraction*"
-            setIncludePatterns "com.yl.junit5.testdemo.*"
+            includeTestsMatching "com.yl.junit5.testdemo.*"
+//            setIncludePatterns "com.yl.junit5.testdemo.*"
 //            includeTest "com.yl.junit5.testdemo.subtraction.subtractionTest","decimalsNumber"
         }
     useJUnitPlatform()
